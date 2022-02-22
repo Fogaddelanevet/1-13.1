@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csempezes", "csempezes\csem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "többelem", "többelem\többelem.csproj", "{A36D1160-F6A8-4BF1-8EC8-2B1D2712884A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testtomeg", "testtomeg\testtomeg.csproj", "{27A99EA3-8F0A-43EC-9BF0-D451F53D6C3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{A36D1160-F6A8-4BF1-8EC8-2B1D2712884A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A36D1160-F6A8-4BF1-8EC8-2B1D2712884A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A36D1160-F6A8-4BF1-8EC8-2B1D2712884A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A99EA3-8F0A-43EC-9BF0-D451F53D6C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A99EA3-8F0A-43EC-9BF0-D451F53D6C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A99EA3-8F0A-43EC-9BF0-D451F53D6C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A99EA3-8F0A-43EC-9BF0-D451F53D6C3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
