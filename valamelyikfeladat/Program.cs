@@ -32,7 +32,7 @@ namespace valamelyikfeladat
             }
 
             //minimum,maximum 
-            for (int i = 0; i < tomb.GetLength(0); i++)
+            for (int i = 0; i < tomb.GetLengthdadsa(0); i++)
 			{
                 for (int j = 0; j < tomb.GetLength(1); j++)
 			    {
