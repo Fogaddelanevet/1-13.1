@@ -74,11 +74,43 @@ namespace obijektum
             {
                 return this.hang;
             }
+           
+           public Kutya() :base
+
+            {
+                this.setNev("pussssss");
+                this.setSzin("fekete");
+            }
+            public Macska() :base
+            {
+                this.setNev("pussssss");
+                this.setSzin("fekete");
+            }
+        }
+        class Home
+        {
+            List<Allat> szobak=new List<Allat>;
+            Random rnd=new Random();
+            public Home() { }
+            public void allatadd(Allat a)
+            {
+                this.szobak.Add(p);
+            }
+            public void getAllat()
+            {
+                return this.szobak[rnd.Next(0,this.szobak.Count-1]
+            }
+
         }
         static void Main(string[] args)
         {
             Allat allat1 = new Allat();
             // allat1.setKor(4);
+            Home sweethome = new Home();
+            for (int i = 0; i < 20; i++)
+			{
+                sweethome.allatadd(new Kutya())
+			}
 
             Console.WriteLine("{0} {1} {2} {3}", allat1.getKor(), allat1.getNev(), allat1.getFajta(), allat1.getSzin());
 
@@ -93,7 +125,13 @@ namespace obijektum
 
             Console.WriteLine("{0} {1} {2} {3}", allat3.getKor(), allat3.getNev(), allat3.getSzin(),allat3.getFajta());
             Console.WriteLine("hang {0} ",allat3.hangotAd());
-
+            //kihijuk a állatot
+            Allat a =new Allat();
+            for (int i = 0; i < 20; i++)
+			{
+                a=sweethome.getAllat();
+                Console.WriteLine(a) ;
+			}
             Console.ReadKey();
         }
     }
