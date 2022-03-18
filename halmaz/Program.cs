@@ -76,24 +76,34 @@ namespace halmaz
         }
         public void akulonb()
         {
-            List<int> kulonb = new List<int>();
+          var diff = this.a.Except(this.b);
+          Console.WriteLine(String.Join(", ", diff));
+           
+        }
+        public void bkulonb()
+        {
+           var diff = this.b.Except(this.a);
+          Console.WriteLine(String.Join(", ", diff));
 
+        }
+        public void metszet()
+        {
             for (int i = 0; i < a.Length; i++)
-            {
+			{
                 for (int j = 0; j < b.Length; j++)
-                {
-                    if (a[i] == b[j])
+			    {
+                    if(a[i]==b[j])
                     {
-                        kulonb.Add(a[i]);
+                    Console.WriteLine(a[i]);
                     }
-                }             
-                    
-                                                                  
-            }
-            foreach (var item in kulonb)
-            {
-                Console.WriteLine(item);
-            }
+			    }
+                
+			}
+        }
+        public void unio()
+        {
+            var unio=this.a.Union(this.b);
+             Console.WriteLine(String.Join(", ", unio));
         }
 
 
@@ -108,7 +118,12 @@ namespace halmaz
             Console.WriteLine();
             Console.WriteLine("a-b:");
             a.akulonb();
-
+            Console.WriteLine("b-a:");
+            a.bkulonb();
+             Console.WriteLine("metszet:");
+            a.metszet();
+            Console.WriteLine("unio:");
+            a.unio();
             Console.ReadKey();
         }
     }

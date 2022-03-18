@@ -10,38 +10,21 @@ namespace igazolatlan
     {
         static void Main(string[] args)
         {
-            int igazolatlan = 0;
-            DateTime szuletes;
-            Console.WriteLine("igazolatlanok szama: ");
-            igazolatlan = int.Parse(Console.ReadLine());
-
-            if(igazolatlan >= 10 )
-            {
-                Console.WriteLine("add meg a születési évet:");
-                szuletes = Convert.ToDateTime(Console.ReadLine());
-                Console.WriteLine("az igazolatlanok szama:{0}", igazolatlan);
-            }
-            if (igazolatlan<10)
-            {
-                Console.WriteLine("nincs problema");
-            }
-            else if (igazolatlan>=10 && igazolatlan<20)
-            {
-                Console.WriteLine("figyelmeztetes");
-            }   
-            else if (igazolatlan>=21 && igazolatlan <25)
-            {
-                Console.WriteLine("osztalyfonoki");
-            }
-            else if(igazolatlan >=26 && igazolatlan <30 )
-            {
-                Console.WriteLine("igazgatoi");
-            }
-            else if (igazolatlan >= 31 )
-            {
-                Console.WriteLine("felfuggesztes");
-            }
-            Console.ReadKey();
+        Random r =new Random();
+        Console.WriteLine("tefasz:");
+        int szam;
+        szam=Convert.ToInt32(Console.ReadLine());
+        int [,] matrix = new int [szam,szam];
+        for (int i = 0; i < matrix.GetLength(0); i++)
+			{
+                for (int j = 0; j < matrix.GetLength(1); j++)
+			    {
+                    matrix[i,j]=r.Next(0,50);
+                    Console.Write("{0}, ",matrix[i,j]);
+			    }
+                Console.WriteLine();
+			}
+        Console.ReadKey();
         }
     }
 }
