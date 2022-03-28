@@ -44,13 +44,27 @@ namespace honapok
             }
 
         }
+         public void Tavaszatlag()
+        {
+            int db=0;
+            Random r = new Random()
+            for (int j = 0; j < 3; j++)
+			    {
+                 for (int i = 0; i < homersekletek.GetLength(0); i++)
+			         {
+                       db+= this.homersekletek[i, 0] = r.Next(-10, 0);
+                       db+= this.homersekletek[i, 1] = r.Next(0, 20);
+			         }
+			     }
+          Console.WriteLine(db);
+        }
         public void kiiratas()
         {
             double atlag = (this.homersekletek[this.nap, 0] + this.homersekletek[this.nap, 1]) / 2;
             Console.WriteLine("a nap hőmérsékletei: este: {0} nappal {1} atlag {2}", this.homersekletek[this.nap, 0], this.homersekletek[this.nap, 1], atlag);
         }
 
-
+       
     }
 
 
@@ -62,6 +76,7 @@ namespace honapok
             Honapok a = new Honapok();
             a.Tavasz();
             a.kiiratas();
+            a.Tavaszatlag();
             Console.ReadKey();
         }
     }
