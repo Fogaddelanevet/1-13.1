@@ -1,0 +1,96 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace szamrendszer
+{
+    class Szamrendszer
+    {
+        int szamrend;
+        int szam2;
+        public Szamrendszer()
+        {
+
+        }
+        public int beolvas()
+        {
+            Console.WriteLine("Melyik számrendszer?");
+            this.szamrend = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("milyen szam?");
+            this.szam2 = Convert.ToInt32(Console.ReadLine());
+            return szamrend;
+        }
+        public void kettes()
+        {
+
+            string bin = "";
+            int[] kettesek = new int[] { 128, 64, 32, 16, 8, 4, 2, 1 };
+
+            for (int i = 0; i < kettesek.Length; i++)
+            {
+                if (this.szam2 - kettesek[i] >= 0)
+                {
+                    bin += "1 ";
+                    this.szam2 -= kettesek[i];
+
+                }
+                else
+                {
+                    bin += "0 ";
+                }
+            }
+            Console.WriteLine(bin);
+        }
+        public void Hex()
+        {
+            string hex = this.szam2.ToString("X");
+            Console.WriteLine(hex); 
+           
+        }
+        public void Oct()
+        {
+            int counter, i = 1, j;
+
+            counter = this.szam2;
+            int[] octalValue = new int[80];
+            while (counter != 0)
+            {
+                octalValue[i++] = counter % 8;
+                counter /= 8;
+            }
+            
+            for (j = i - 1; j > 0; j--)
+                Console.Write(octalValue[j]);
+        }
+
+
+
+
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Szamrendszer a = new Szamrendszer();
+            if (a.beolvas() == 2)
+            {
+                a.kettes();
+            }
+            else if(a.beolvas()==8)
+            {
+                a.Hex();
+            }
+            else
+            {
+                a.Oct();
+            }
+            Console.ReadKey();
+
+        }
+    }
+}
