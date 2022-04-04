@@ -6,23 +6,15 @@ using System.Threading.Tasks;
 
 namespace szamrendszer
 {
-    class Szamrendszer
+    class Kettes
     {
-        int szamrend;
+        
         int szam2;
-        public Szamrendszer()
+        public Kettes(int szam2)
         {
-
+            this.szam2=szam2;
         }
-        public int beolvas()
-        {
-            Console.WriteLine("Melyik számrendszer?");
-            this.szamrend = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("milyen szam?");
-            this.szam2 = Convert.ToInt32(Console.ReadLine());
-            return szamrend;
-        }
+       
         public void kettes()
         {
 
@@ -44,26 +36,78 @@ namespace szamrendszer
             }
             Console.WriteLine(bin);
         }
-        public void hex()
+    }
+    class Hex
+    { 
+        int szam;
+        public Hex(int szam)
         {
-            string ertek = Convert.ToHexString(this.szam2);
+            this.szam=szam;
+        }
+       public void Hexa()
+        {
+            string hex = this.szam.ToString("X");
+            Console.WriteLine(hex); 
+           
+        }
+     }
+    class Oct
+    {
+        int szam3;
+        public Oct(int szam3)
+        {
+            this.szam3=szam3;
+        }
+    
+        public void Octe()
+        {
+            int counter, i = 1, j;
+
+            counter = this.szam3;
+            int[] octalValue = new int[80];
+            while (counter != 0)
+            {
+                octalValue[i++] = counter % 8;
+                counter /= 8;
+            }
+            
+            for (j = i - 1; j > 0; j--)
+                Console.Write(octalValue[j]);
         }
 
-        
-
-
-
     }
+
+
+
+    
     class Program
     {
         static void Main(string[] args)
         {
-
-            Szamrendszer a = new Szamrendszer();
-            if(a.beolvas()==2)
+            int szamrendszer;
+            Console.WriteLine("melyik szamrendszer?");
+            szamrendszer=Convert.ToInt32(Console.ReadLine());
+            if(szamrendszer==2)
             {
+                Console.WriteLine("adj meg egy szamot:");
+                Kettes a =new Kettes(Convert.ToInt32(Console.ReadLine()));
                 a.kettes();
+
             }
+            if(szamrendszer==16)
+            {
+                Console.WriteLine("adj meg egy szamot:");
+                Hex h =new Hex(Convert.ToInt32(Console.ReadLine()));
+                h.Hexa();
+            }
+             if(szamrendszer==8)
+            {
+                Console.WriteLine("adj meg egy szamot:");
+                Oct o =new Oct(Convert.ToInt32(Console.ReadLine()));
+                o.Octe();
+            }
+            
+
             Console.ReadKey();
 
         }
