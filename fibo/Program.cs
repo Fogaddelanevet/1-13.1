@@ -17,7 +17,7 @@ namespace fibo
         public void kiir()
         {
             for (int i = 0; i < this.b; i++)
-            {
+            { 
                 Console.WriteLine(a[i]);
             }
         }
