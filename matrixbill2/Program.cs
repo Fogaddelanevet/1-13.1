@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MatrixBill3
+namespace MatrixBill2
 {
     class Matrix
     {
+        int db;
         int[,] tomb;
         int a;
         int b;
@@ -16,19 +17,32 @@ namespace MatrixBill3
 
             this.a = a;
             this.b = b;
-            
+            this.db = 0;
+
         }
         public void feltolt()
         {
+
             this.tomb = new int[this.a, this.b];
             for (int i = 0; i < this.tomb.GetLength(0); i++)
             {
 
                 for (int j = 0; j < tomb.GetLength(1); j++)
                 {
-                    Console.WriteLine("az elem indexe:{0}",i,j);
+                    db++;
                     tomb[i, j] = Convert.ToInt32(Console.ReadLine());
+                    if(db==this.tomb.GetLength(1))
+                    {
+                        this.db = 0;
+                        for (int k = 0; k < this.tomb.GetLength(1); k++)
+                        {
+                            
+                            Console.Write("Sor: {0} ",this.tomb[i, k]);
+                        }
+                        Console.WriteLine();
+                    }
                 }
+                
             }
         }
         public void kiir()
@@ -54,9 +68,11 @@ namespace MatrixBill3
             Matrix m = new Matrix(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()));
             Console.WriteLine();
             m.feltolt();
+            Console.WriteLine();
             Console.WriteLine("kiiras");
             m.kiir();
             Console.ReadKey();
         }
     }
 }
+
