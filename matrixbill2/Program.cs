@@ -17,7 +17,7 @@ namespace MatrixBill2
 
             this.a = a;
             this.b = b;
-            this.db = 0;
+            this.db = 0;   
 
         }
         public void feltolt()
