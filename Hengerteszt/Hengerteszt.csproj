@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{117B5855-4F5F-4F83-929F-02DD0BA30BE7}</ProjectGuid>
+    <ProjectGuid>{2DD25907-86DA-4B18-BD37-A5E455C4CB04}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hengertesztje</RootNamespace>
-    <AssemblyName>Hengertesztje</AssemblyName>
+    <RootNamespace>Hengerteszt</RootNamespace>
+    <AssemblyName>Hengerteszt</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hengermarmegint\Hengermarmegint.csproj">
-      <Project>{54fc088c-65ca-4325-8ca3-1f17cc000590}</Project>
-      <Name>Hengermarmegint</Name>
+    <ProjectReference Include="..\Henger\Henger.csproj">
+      <Project>{70d8adf3-a393-4027-b567-7013388eed54}</Project>
+      <Name>Henger</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

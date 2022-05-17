@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Henger
+namespace h
 {
     public class Henger
     {
@@ -45,20 +45,21 @@ namespace Henger
             return terfogat;
 
         }
-    }
-    class Program
-    {
-    
-        static void Main(string[] args)
+        class Program
         {
-            Henger a = new Henger();
-            a.getSugar();
-            a.getMagas();
-            a.getKerulet();
-            a.getTerulet();
-            a.getFelszin();
-            a.getTerfogat();
-            Console.ReadKey();
+
+
+            static void Main(string[] args)
+            {
+                Henger a = new Henger();
+                a.getSugar();
+                a.getMagas();
+                a.getKerulet();
+                a.getTerulet();
+                a.getFelszin();
+                a.getTerfogat();
+                Console.ReadKey();
+            }
         }
     }
 }
