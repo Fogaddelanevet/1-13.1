@@ -17,12 +17,12 @@ namespace h
         public void getSugar()
         {
             Console.WriteLine("Mekkora sugara van?");
-            this.sugar = Convert.ToDouble(Console.ReadLine());
+            this.sugar =5;
         }
         public void getMagas()
         {
             Console.WriteLine("mekkora magassága van?");
-            this.magassag = Convert.ToDouble(Console.ReadLine());
+            this.magassag = 5;
         }
         public double getKerulet()
         {
@@ -54,7 +54,7 @@ namespace h
                 Henger a = new Henger();
                 a.getSugar();
                 a.getMagas();
-                a.getKerulet();
+                Console.WriteLine(a.getKerulet());
                 a.getTerulet();
                 a.getFelszin();
                 a.getTerfogat();

@@ -6,13 +6,27 @@ namespace hteszt
     [TestClass]
     public class UnitTest1
     {
+        Henger x = new Henger();
+            
+        public void keruletteszt()
+        { 
+            double vareredmeny = 20;
+            double kapotteredmeny = x.getKerulet();
+            double kerulet=x.getKerulet();
+            Assert.AreEqual(vareredmeny, kapotteredmeny);
+            
+        }           
+        
+       
+        
+         
         
         [TestMethod]
         public void TestMethod1()
         {
-            Henger h = new Henger();
-            public void kerulet()
-
+          
+           
+            
         }
     }
 }
