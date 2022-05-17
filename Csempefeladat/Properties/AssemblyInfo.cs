@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("csempezes")]
+[assembly: AssemblyTitle("Csempefeladat")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("csempezes")]
+[assembly: AssemblyProduct("Csempefeladat")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5cc4ec3d-bbd2-448c-9ce1-52c9cf16ae6d")]
+[assembly: Guid("21270cc8-87d0-4b3f-ae7b-62573171875b")]
 
 // Version information for an assembly consists of the following four values:
 //

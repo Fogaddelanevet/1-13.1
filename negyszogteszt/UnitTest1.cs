@@ -15,7 +15,7 @@ namespace negyszogteszt
         {
             double vartered = 8;
             double kapottered = nsz.kerület();
-            double ker = nsz.kerület();
+            //double ker = nsz.kerület();
             //
             Assert.AreEqual(vartered, kapottered);
         }
