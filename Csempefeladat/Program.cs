@@ -12,7 +12,8 @@ namespace csempezes
         double hosszusag;
         public Csempe()
         {
-
+            this.szelesseg = 10; 
+            this.hosszusag = 10;
         }
         public void setSzelesseg()
         {
