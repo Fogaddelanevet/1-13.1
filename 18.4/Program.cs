@@ -97,15 +97,15 @@ namespace tizennyolc
                      bulizok[j] = c ;
                  }
                }
-    public void kiir()
-            {
+            public void kiir()
+             {
                 
                 
-                for (int i = 0; i < 15; i++)
-                {
-                    printBarat();
-                }
-                Console.ReadKey();
+                        for (int i = 0; i < 15; i++)
+                        {
+                            printBarat();
+                        }
+                        Console.ReadKey();
             }
 
 
@@ -116,6 +116,7 @@ namespace tizennyolc
         static void Main(string[] args)
         {
             BaratLista br = new BaratLista();
+            br.kiir();
 
         }
     }
