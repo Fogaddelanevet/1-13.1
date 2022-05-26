@@ -31,7 +31,8 @@ namespace tizennyolc
             private List<Baratok> baratlista;
 
             private string fajlNev;
-            public BaratLista()
+
+            public BaratLista
             {
                 baratlista = new List<Baratok>();
             }
@@ -67,13 +68,13 @@ namespace tizennyolc
             static List<Baratok> valogat(List<Baratok>mindenki)
             {
                 Baratok p;
-                int koraiEv = DateTime.Now.Year − 20;
+                int koraiEv = Convert.ToDateTime(DateTime.Now.Year)-20;
                 List<Baratok> ret = new List<Baratok>( );
                 foreach (Baratok item in mindenki)
                 {
                     if(p.szuletett.Year<=koraiEv && p.bulis>=5)
                     {
-                        ret.Add(p)
+                        ret.Add(p);
 
                     }
                     
@@ -99,13 +100,13 @@ namespace tizennyolc
                }
             public void kiir()
              {
+                Baratok p;
                 
-                
-                        for (int i = 0; i < 15; i++)
-                        {
-                            printBarat();
-                        }
-                        Console.ReadKey();
+               for (int i = 0; i < 15; i++)
+                {
+                  p.printBarat();
+                }
+              Console.ReadKey();
             }
 
 
