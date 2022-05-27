@@ -16,16 +16,31 @@ namespace calculator_test
             double varteredmeny1 = a.eredmeny();
             double kapotteredmeny1 = 10.0;
             double eredmeny = a.eredmeny();
+            double kivonaskapotteredmeny = 10.0;
+            double szorzaskapotteredmeny = 10.0;
+            double osztaskapotteredmeny = 10.0;
+
             Assert.AreNotEqual(varteredmeny1, kapotteredmeny1);
+            Assert.AreNotEqual(kivonaskapotteredmeny, kapotteredmeny1);
+            Assert.AreNotEqual(szorzaskapotteredmeny, kapotteredmeny1);
+            Assert.AreNotEqual(osztaskapotteredmeny, kapotteredmeny1);
 
         }
         [TestMethod]
         public void jomethodus()
         {
             double varteredmeny = a.eredmeny();
-            double kapotteredmeny = 20.0;
+
             double eredmeny = a.eredmeny();
+            double kapotteredmeny = 20.0;
+            double kivonaskapotteredmeny = 0.0;
+            double szorzaskapotteredmeny = 100.0;
+            double osztaskapotteredmeny = 1.0;
+
             Assert.AreEqual(kapotteredmeny, varteredmeny);
+            Assert.AreEqual(kivonaskapotteredmeny, varteredmeny);
+            Assert.AreEqual(szorzaskapotteredmeny, varteredmeny);
+            Assert.AreEqual(osztaskapotteredmeny, varteredmeny);
 
 
         }

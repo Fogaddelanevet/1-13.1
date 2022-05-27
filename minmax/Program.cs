@@ -26,10 +26,7 @@ namespace minmax
     {
         static void Main(string[] args)
         {
-            Kivalasztas a = new Kivalasztas();
-            a.min();
-            Console.WriteLine(a.max());
-            Console.ReadKey();
+           
 
         }
     }
