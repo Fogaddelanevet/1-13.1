@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6CCC6F87-13D7-4B2E-847A-B8413BA944C8}</ProjectGuid>
+    <ProjectGuid>{F18F6B13-B230-4F15-A25D-0BB33110D1E5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>szigetek</RootNamespace>
-    <AssemblyName>szigetek</AssemblyName>
+    <RootNamespace>Szigetek3</RootNamespace>
+    <AssemblyName>Szigetek3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

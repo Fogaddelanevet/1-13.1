@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "datetime", "datetime\dateti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "valamiform2", "valamiform2\valamiform2.csproj", "{F73C9C36-B913-4D6F-AC86-A702F1315FDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Szigetek3", "Szigetek3\Szigetek3.csproj", "{F18F6B13-B230-4F15-A25D-0BB33110D1E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Szigetteszt", "Szigetteszt\Szigetteszt.csproj", "{BC8570C4-8813-49EC-9E4B-B541A46F3D1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{F73C9C36-B913-4D6F-AC86-A702F1315FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F73C9C36-B913-4D6F-AC86-A702F1315FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F73C9C36-B913-4D6F-AC86-A702F1315FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F18F6B13-B230-4F15-A25D-0BB33110D1E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F18F6B13-B230-4F15-A25D-0BB33110D1E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F18F6B13-B230-4F15-A25D-0BB33110D1E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F18F6B13-B230-4F15-A25D-0BB33110D1E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC8570C4-8813-49EC-9E4B-B541A46F3D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC8570C4-8813-49EC-9E4B-B541A46F3D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC8570C4-8813-49EC-9E4B-B541A46F3D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC8570C4-8813-49EC-9E4B-B541A46F3D1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
