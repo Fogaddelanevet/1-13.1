@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4C26C3E3-89FE-4F3F-A290-5BF8BC40D2E0}</ProjectGuid>
+    <ProjectGuid>{F73C9C36-B913-4D6F-AC86-A702F1315FDF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>datetime</RootNamespace>
-    <AssemblyName>datetime</AssemblyName>
+    <RootNamespace>valamiform2</RootNamespace>
+    <AssemblyName>valamiform2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

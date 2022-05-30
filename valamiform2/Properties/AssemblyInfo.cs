@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("datetime")]
+[assembly: AssemblyTitle("valamiform2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("datetime")]
+[assembly: AssemblyProduct("valamiform2")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4c26c3e3-89fe-4f3f-a290-5bf8bc40d2e0")]
+[assembly: Guid("f73c9c36-b913-4d6f-ac86-a702f1315fdf")]
 
 // Version information for an assembly consists of the following four values:
 //
