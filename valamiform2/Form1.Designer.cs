@@ -37,15 +37,15 @@ namespace valamiform2
             this.buttonbalszel = new System.Windows.Forms.Button();
             this.buttonfelul = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelatlaco = new System.Windows.Forms.Label();
             this.buttonopacitycsok = new System.Windows.Forms.Button();
             this.buttonopacityno = new System.Windows.Forms.Button();
             this.meret = new System.Windows.Forms.GroupBox();
+            this.labelmeret = new System.Windows.Forms.Label();
             this.buttoncsokken = new System.Windows.Forms.Button();
             this.buttonnovekszik = new System.Windows.Forms.Button();
             this.buttonjobbszel = new System.Windows.Forms.Button();
             this.buttonle = new System.Windows.Forms.Button();
-            this.labelmeret = new System.Windows.Forms.Label();
-            this.labelatlaco = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.meret.SuspendLayout();
             this.SuspendLayout();
@@ -58,6 +58,7 @@ namespace valamiform2
             this.kozep.TabIndex = 0;
             this.kozep.Text = "kozep";
             this.kozep.UseVisualStyleBackColor = true;
+            this.kozep.Click += new System.EventHandler(this.kozep_Click);
             // 
             // buttonlefele
             // 
@@ -76,6 +77,7 @@ namespace valamiform2
             this.buttonfel.TabIndex = 2;
             this.buttonfel.Text = "fel";
             this.buttonfel.UseVisualStyleBackColor = true;
+            this.buttonfel.Click += new System.EventHandler(this.buttonfel_Click);
             // 
             // buttonjobb
             // 
@@ -112,6 +114,7 @@ namespace valamiform2
             this.buttonfelul.TabIndex = 9;
             this.buttonfelul.Text = "felülre";
             this.buttonfelul.UseVisualStyleBackColor = true;
+            this.buttonfelul.Click += new System.EventHandler(this.buttonfelul_Click);
             // 
             // groupBox1
             // 
@@ -125,6 +128,16 @@ namespace valamiform2
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // labelatlaco
+            // 
+            this.labelatlaco.AutoSize = true;
+            this.labelatlaco.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelatlaco.Location = new System.Drawing.Point(6, 41);
+            this.labelatlaco.Name = "labelatlaco";
+            this.labelatlaco.Size = new System.Drawing.Size(70, 25);
+            this.labelatlaco.TabIndex = 15;
+            this.labelatlaco.Text = "átlácó";
             // 
             // buttonopacitycsok
             // 
@@ -156,6 +169,16 @@ namespace valamiform2
             this.meret.TabIndex = 14;
             this.meret.TabStop = false;
             this.meret.Text = "groupBox2";
+            // 
+            // labelmeret
+            // 
+            this.labelmeret.AutoSize = true;
+            this.labelmeret.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelmeret.Location = new System.Drawing.Point(7, 43);
+            this.labelmeret.Name = "labelmeret";
+            this.labelmeret.Size = new System.Drawing.Size(66, 25);
+            this.labelmeret.TabIndex = 14;
+            this.labelmeret.Text = "méret";
             // 
             // buttoncsokken
             // 
@@ -192,26 +215,7 @@ namespace valamiform2
             this.buttonle.TabIndex = 15;
             this.buttonle.Text = "le";
             this.buttonle.UseVisualStyleBackColor = true;
-            // 
-            // labelmeret
-            // 
-            this.labelmeret.AutoSize = true;
-            this.labelmeret.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelmeret.Location = new System.Drawing.Point(7, 43);
-            this.labelmeret.Name = "labelmeret";
-            this.labelmeret.Size = new System.Drawing.Size(66, 25);
-            this.labelmeret.TabIndex = 14;
-            this.labelmeret.Text = "méret";
-            // 
-            // labelatlaco
-            // 
-            this.labelatlaco.AutoSize = true;
-            this.labelatlaco.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelatlaco.Location = new System.Drawing.Point(6, 41);
-            this.labelatlaco.Name = "labelatlaco";
-            this.labelatlaco.Size = new System.Drawing.Size(70, 25);
-            this.labelatlaco.TabIndex = 15;
-            this.labelatlaco.Text = "átlácó";
+            this.buttonle.Click += new System.EventHandler(this.buttonle_Click);
             // 
             // Form1
             // 
