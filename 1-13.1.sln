@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Szigetek3", "Szigetek3\Szig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Szigetteszt", "Szigetteszt\Szigetteszt.csproj", "{BC8570C4-8813-49EC-9E4B-B541A46F3D1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "korbekorbeform", "korbekorbeform\korbekorbeform.csproj", "{075ABA94-E4CB-45D4-9826-5C3B29A229D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{BC8570C4-8813-49EC-9E4B-B541A46F3D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC8570C4-8813-49EC-9E4B-B541A46F3D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC8570C4-8813-49EC-9E4B-B541A46F3D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{075ABA94-E4CB-45D4-9826-5C3B29A229D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{075ABA94-E4CB-45D4-9826-5C3B29A229D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{075ABA94-E4CB-45D4-9826-5C3B29A229D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{075ABA94-E4CB-45D4-9826-5C3B29A229D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
